@@ -1,0 +1,2 @@
+# Egal
+La calculette paritaire
