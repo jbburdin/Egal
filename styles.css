@@ -1,3 +1,4 @@
+/* Styles communs */
 body, html {
     margin: 0;
     padding: 0;
@@ -10,9 +11,11 @@ body, html {
     height: 100vh;
 }
 
+
 .container {
     text-align: center;
-    width: 250px;
+    width: 90vw; /* Utiliser une largeur relative */
+    max-width: 400px; /* Limite maximale pour les grandes écrans */
 }
 
 .logo {
@@ -31,7 +34,7 @@ h2 {
 }
 
 p {
-    font-size: 12px;
+    font-size: 3vw; /* Utiliser une taille relative */
 }
 
 .button {
@@ -41,7 +44,9 @@ p {
     color: white;
     text-decoration: none;
     margin-top: 20px;
+    font-size: 3vw; /* Utiliser une taille relative */
 }
+
 
 .reset, .home-link {
     position: absolute;
@@ -56,9 +61,9 @@ p {
     color: white;
     font-family: "M PLUS Code Latin", monospace;
     font-optical-sizing: auto;
-    font-size: 14px;
-    width: 60px;
-    height: 60px;
+    font-size: 3vw; /* Utiliser une taille relative */
+    width: 12vw; /* Utiliser une taille relative */
+    height: 12vw; /* Utiliser une taille relative */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,11 +82,11 @@ p {
 }
 
 .display #displayText {
-    font-size: 12px;
+    font-size: 3vw; /* Utiliser une taille relative */
 }
 
 .amount {
-    font-size: 64px;
+    font-size: 20vw; /* Utiliser une taille relative */
     opacity: 0.7;
 }
 
@@ -101,9 +106,9 @@ p {
     background-color: #d46f3e;
     border: 2px solid #A13303;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    font-size: 24px;
+    width: 20vw; /* Utiliser une taille relative */
+    height: 20vw; /* Utiliser une taille relative */
+    font-size: 6vw; /* Utiliser une taille relative */
     color: white;
 }
 
@@ -112,9 +117,9 @@ p {
     color: #d46f3e !important;
     border: 2px solid #A13303;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    font-size: 24px;
+    width: 20vw; /* Utiliser une taille relative */
+    height: 20vw; /* Utiliser une taille relative */
+    font-size: 6vw; /* Utiliser une taille relative */
     grid-column: 3;
     grid-row: 4;
     display: flex;
@@ -122,8 +127,8 @@ p {
     align-items: center;
 }
 .equal .icon {
-    width: 60%;
-    height: 60%;
+    width: 10vw;
+    height: 10vw;
 }
 
 .shares {
@@ -142,15 +147,19 @@ p {
     background: none;
     border: none;
     color: white;
-    font-size: 26px;
+    font-size: 8vw; /* Utiliser une taille relative */
+}
+
+#menShares, #womenShares {
+    font-size: 8vw; /* Ajuster la taille du texte pour les parts hommes et femmes */
 }
 
 .result-text {
-    font-size: 12px;
+    font-size: 3vw; /* Utiliser une taille relative */
 }
 
 .result-amount {
-    font-size: 64px;
+    font-size: 20vw; /* Utiliser une taille relative */
     opacity: 0.7;
 }
 
@@ -161,4 +170,76 @@ body.index-page {
 
 body.calcul-page {
     background-color: #d46f3e;
+}
+/* Media queries pour ajuster les styles en fonction de la taille de l'écran */
+@media (min-width: 768px) {
+    .container {
+        width: 250px; /* Ajuster la largeur pour les écrans plus larges */
+    }
+
+    h1 {
+        font-size: 32px; /* Ajuster la taille pour les écrans plus larges */
+    }
+
+    h2 {
+        font-size: 14px; /* Ajuster la taille pour les écrans plus larges */
+    }
+
+    .key-figure {
+        font-size: 64px; /* Ajuster la taille pour les écrans plus larges */
+    }
+
+    p {
+        font-size: 12px; /* Ajuster la taille pour les écrans plus larges */
+    }
+
+    .button {
+        font-size: 12px; /* Ajuster la taille pour les écrans plus larges */
+    }
+
+    .reset {
+        font-size: 14px; /* Ajuster la taille pour les écrans plus larges */
+        width: 60px; /* Ajuster la taille pour les écrans plus larges */
+        height: 60px; /* Ajuster la taille pour les écrans plus larges */
+    }
+
+    #menShares, #womenShares {
+        font-size: 22px; 
+    }
+    
+    
+    .home-link {
+        font-size: 12px; /* Ajuster la taille pour les écrans plus larges */
+    }
+
+    .equal .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .display #displayText {
+        font-size: 12px; /* Ajuster la taille pour les écrans plus larges */
+    }
+
+    .amount {
+        font-size: 64px; /* Ajuster la taille pour les écrans plus larges */
+    }
+
+    .numbers button, .equal {
+        width: 60px; /* Ajuster la taille pour les écrans plus larges */
+        height: 60px; /* Ajuster la taille pour les écrans plus larges */
+        font-size: 24px; /* Ajuster la taille pour les écrans plus larges */
+    }
+
+    .shares-section button {
+        font-size: 18px; /* Ajuster la taille pour les écrans plus larges */
+    }
+
+    .result-text {
+        font-size: 12px; /* Ajuster la taille pour les écrans plus larges */
+    }
+
+    .result-amount {
+        font-size: 64px; /* Ajuster la taille pour les écrans plus larges */
+    }
 }
